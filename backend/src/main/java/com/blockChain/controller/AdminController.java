@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.blockChain.service.AdminSvcInter;
 
 @RestController
-@RequestMapping("/Admin")
+@RequestMapping("/api/Admin")
 public class AdminController {
 	
 	@Autowired

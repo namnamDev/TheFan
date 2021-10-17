@@ -58,6 +58,12 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.modelmapper/modelmapper
 	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.0'
 	
+	//web3j
+	implementation ('org.web3j:core:4.8.7')
+	
+	// OkHttp
+	implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+	implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
 }
 
 test {

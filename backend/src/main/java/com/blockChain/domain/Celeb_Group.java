@@ -14,7 +14,6 @@ public class Celeb_Group {
 	
     // 그룹넘버 
 	@Id
-	@GeneratedValue
 	@Column(name="GROUP_NO")
     private Long groupNo;
 

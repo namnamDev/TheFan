@@ -13,4 +13,8 @@ public interface Token_OwnerRepoCustom {
 
 	Optional<List<Token_Owner>> sltMultiTokenByMember(Long memberNo);
 
+	Optional<Token_Owner> sltByTokenMember(Long memberNo, Long tokenNo);
+
+	Optional<Token_Owner> sltToken(Long tokenNo);
+
 }

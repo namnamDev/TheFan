@@ -40,4 +40,6 @@ public interface AdminSvcInter {
 
 	Map<String, Object> insertBid();
 
+	Map<String, Object> buyCardPack();
+
 }

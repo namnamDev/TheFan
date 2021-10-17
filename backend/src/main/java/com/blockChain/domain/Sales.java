@@ -22,10 +22,6 @@ public class Sales {
 	@Column(name="SALES_NO")
     private Long salesNo;
 
-//    // 제품번호
-//	@ManyToOne
-//	@JoinColumn(name="PRODUCT_NO")
-//    private Product product;
 
     // 판매상세
 	@Column(name="SALES_DETAIL",length=5000)
@@ -38,4 +34,11 @@ public class Sales {
     // 판매명 
 	@Column(name="SALES_NM",length=300)
     private String salesNm;
+    // 판매구분 
+	@Column(name="SALES_DIV",length=3)
+    private String salesDiv;
+	
+	@Column(name="SALES_IMG")
+	private String imgUrl;
+	
 }

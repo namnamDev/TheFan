@@ -33,4 +33,23 @@ public class Token_OwnerRepoImpl implements Token_OwnerRepoCustom{
 		QToken_Owner qto = QToken_Owner.token_Owner;
 		return  Optional.ofNullable(queryFactory.selectFrom(qto).where(qto.member.memberNo.eq(memberNo)).fetch());
 	}
+	@Override
+	public Optional<Token_Owner> sltToken(Long tokenNo){
+		QToken_Owner qto = QToken_Owner.token_Owner;
+		return  Optional.ofNullable(queryFactory.selectFrom(qto).where(qto.token.tokenNo.eq(tokenNo)).fetchOne());
+	}
+	
+	@Override
+	public Optional<Token_Owner> sltByTokenMember(Long memberNo,Long tokenNo){
+		QToken_Owner qto = QToken_Owner.token_Owner;
+		return  Optional.ofNullable(queryFactory
+				.selectFrom(qto)
+				.where(qto.member.memberNo.eq(memberNo).and(qto.token.tokenNo.eq(tokenNo)))
+				.fetchOne());
+	}
+//	@Override
+//	public void updateToken(Token_Owner to) {
+//		queryFactory.selectFrom()
+//	}
+	
 }

@@ -40,12 +40,5 @@ public class Sales_Order {
     @CreationTimestamp
     private LocalDateTime salesOrderDate;
 
-    // 구매가격
-	@Column(name="SALES_ORDER_PRICE")
-    private Integer salesOrderPrice;
 
-    // 판매토큰번호 
-	@ManyToOne
-	@JoinColumn(name="TOKEN")
-    private Token token;
 }

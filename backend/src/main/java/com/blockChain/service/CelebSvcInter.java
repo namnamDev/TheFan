@@ -6,4 +6,6 @@ public interface CelebSvcInter {
 
 	Map<String, Object> sltCelebDTObyGroup();
 
+	Map<String, Object> artistList();
+
 }

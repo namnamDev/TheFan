@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class Sold_Bundle_InsidePK implements Serializable{
-	private Long sales;
+	private Long salesOrder;
 	private Long token;
 
 }

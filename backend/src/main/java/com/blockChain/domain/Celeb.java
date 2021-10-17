@@ -21,7 +21,6 @@ public class Celeb {
 
   // 샐럽번호
   @Id
-  @GeneratedValue
   @JoinColumn(name="CELEB_NO")
   private Long celebNo;
 

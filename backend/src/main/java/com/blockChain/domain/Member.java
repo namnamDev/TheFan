@@ -54,7 +54,7 @@ public class Member {
   // 전화번호
   @Column(name="MEMBER_PHONE",length=11)
   private String memberPhone;
-  //지갑
-  @Column(name="MEMBER_WALLET",length=500)
-  private String memberWallet;
+//  //지갑
+//  @Column(name="MEMBER_WALLET",length=500)
+//  private String memberWallet;
 }

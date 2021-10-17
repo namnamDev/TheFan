@@ -1,5 +1,4 @@
 package com.blockChain.controller;
-import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,19 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.blockChain.service.CelebSvcInter;
 @RestController
-@RequestMapping("/main")
+@RequestMapping("/api/main")
 public class MainController {
 	@Autowired
 	CelebSvcInter celebSvc;
-//	@GetMapping
-//    public HashMap<String,Object> home() {
-//    	HashMap<String, Object> res = new HashMap<String,Object>();
-//    	res.put("msg", "Hello World!");
-//        return res;
-//    }
-	@GetMapping("/celebGroup")
-	public Map<String,Object> celebGroup(){
+	@GetMapping("/celebgrouplist")
+	public Map<String,Object> celebGroupList(){
 		return celebSvc.sltCelebDTObyGroup();
 	}
 	
+	@GetMapping("/artistlist")
+	public Map<String,Object> artistlist(){
+		return celebSvc.artistList();
+	}
 }

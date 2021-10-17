@@ -10,7 +10,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder @ToString
-public class TokenDto {
+public class LoginTokenDTO {
     private String grantType;
     private String accessToken;
     private String refreshToken;

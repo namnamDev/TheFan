@@ -19,7 +19,7 @@ public class Sold_Bundle_Inside {
 	@Id
 	@ManyToOne
     @JoinColumn(name = "SALES_ORDER_NO")
-    private Sales sales;
+    private Sales_Order salesOrder;
 
     // 토큰
 	@Id
